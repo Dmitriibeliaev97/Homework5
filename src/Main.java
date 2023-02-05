@@ -62,17 +62,21 @@ public class Main {
         } else {
             System.out.println(year + " год не является високосным");
         }
-
-
-
     }
-
-
-
 
     public static void task4 () {
         System.out.println("Задача 4");
-
+        int deliveryDistance = 95;
+        int deliveryTerm = 1;
+        if (deliveryDistance >= 20) {
+            deliveryTerm++;
+        }
+        if (deliveryDistance >= 60 && deliveryDistance <= 100) {
+            deliveryTerm++;
+        System.out.println("Потребуется дней: " + deliveryTerm);
+    } else {
+            System.out.println("Доставка не осуществляется");
+        }
     }
     public static void task5 () {
         System.out.println("Задача 5");
