@@ -37,29 +37,19 @@ public class Main {
         System.out.println("Задача 2");
         int clientOS = 1;
         int clientDeviceYear = 2015;
-        if (clientDeviceYear < 2015) {
-            switch (clientOS) {
-                case 0:
-                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-                    break;
-                case 1:
-                    System.out.println("Установите обшеченную версию приложения для Android по ссылке");
-                    break;
-                default:
-                    System.out.println("У нас появилось мобильное приложение. Зайдите на сайт с телефона, чтобы получить ссылку на приложение");
+        if (clientOS == 0) {
+            if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для iOS по ссылке");
             }
-        } else if (clientDeviceYear >= 2015){
-            switch (clientOS) {
-                case 0:
-                    System.out.println("Установите версию приложения для iOS по ссылке");
-                    break;
-                case 1:
-                    System.out.println("Установите версию приложения для Android по ссылке");
-                    break;
-                default:
-                    System.out.println("У нас появилось мобильное приложение. Зайдите на сайт с телефона, чтобы получить ссылку на приложение");
+        } else {
+            if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            }
 
-            }
         }
 
 
